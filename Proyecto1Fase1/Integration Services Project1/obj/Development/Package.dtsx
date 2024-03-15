@@ -11,8 +11,8 @@
   DTS:LocaleID="4106"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="103"
-  DTS:VersionGUID="{EE0A4564-8195-44FD-920F-B131CF609098}">
+  DTS:VersionBuild="115"
+  DTS:VersionGUID="{C291F9CC-1364-4E9D-8649-5775340A72C9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -400,7 +400,7 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARH1RgtYZaUC+L/h5v82/dAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAXhKyLyUKFpOf/wik4MY02pN+pSyo3bu8WbnZIi8um3wAAAAAOgAAAAAIAACAAAADw6JHUsIPBae5Zm7EXS2FLjg2zWdHr/tSUXDhTsNFNhxAAAADvUuMRdV/RTYJNtRdEMkjOQAAAAI80ZVF+HTxU3bmwFbFkRJePvS7JmU77tyWmcZbC2sLkTORozZxVuf8NhvIbDAoiRO+OkZ9hkTrZE3yL+R+j5RM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARH1RgtYZaUC+L/h5v82/dAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADbpLHIAOv4DK6RcgeS3FZMKu3Yq/kl9YEpGLWzx+WYBgAAAAAOgAAAAAIAACAAAADFbxmRCyMZ8VP1wHBevmxWJ67VIw8/D/kNa4sS682pTxAAAABczPJnI3WqkEWUumX4J2/RQAAAAHqYEqcAwovnbi7nMkqVNbFjBzVIk2l/VF5JEv0Q1VfCGWPGk1XVzaOQYvoAOWtL0luzp7m5IlRHVgqpbmi2Pp0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -415,7 +415,22 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARH1RgtYZaUC+L/h5v82/dAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAColGx9r7hbEozO5za1KbFfKbLWyD8wo7R6xmp8ApwHEQAAAAAOgAAAAAIAACAAAACcTEvSuxG7V7WI3hZPe56qM2Q1OkcPWcdfbeUlL1BKlRAAAADrhtc/0UNcqKn/EgVy6A1SQAAAAFs1GkyEaZgE97s+m5RaKQaXTXwTAXt/ceVUUfU8lxyzGlaHuQvlJtWgJWlEKK/xakocAzmlgl66GpF3rI+Nrec</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARH1RgtYZaUC+L/h5v82/dAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADmhw/Z2Xf3xhJaMKVZEjOPTgFT4pRClw2UGOF1Ymy3+gAAAAAOgAAAAAIAACAAAAD65oyqyk0vzMXg9jBZRrS621bSbBAFXmrV0PKN2nqw4xAAAAC5jSuWp5YtP5qn2ZprYIHfQAAAANEIaBTPXECDsAJS19sGOCf33WHtoK60szhBtONR3AhSnXnFWZerPUIij+TgqBbx4jRiTtgSTT2mLCGcpJaUjuo</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.fuente1.root]"
+      DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"
+      DTS:DTSID="{4E3A2BCE-9498-45FF-B6E8-8C6703AF688C}"
+      DTS:ObjectName="localhost.fuente1.root">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="server=localhost;user id=root;database=fuente1;">
+          <DTS:Password
+            DTS:Name="password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARH1RgtYZaUC+L/h5v82/dAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB0os+kKFXky+7emoMJVQXjosbmvWUqVdG/uJNjXrWeywAAAAAOgAAAAAIAACAAAADKvah6RxXe9vszzh2ZEvd3qh6tGfWtj964jbRsGUoLcxAAAACLfbsXFkkA/Svx1XchjAAKQAAAAMgO0KYb2unenmXLzdr+owNnAA6PtdILlmWU/h4fUzdMPcnXkHA6Y6xvRdlbCkjVxKXngw+8s22B0zngPFCIAc8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -427,6 +442,18 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=localhost;Initial Catalog=fuente2;Integrated Security=True;Application Name=SSIS-Package-{1543940C-8481-4039-8249-07B9C0D5AAC4}localhost.fuente2;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.fuente21]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B54B1A07-97C1-4500-ACDC-45B14AAC9F52}"
+      DTS:ObjectName="localhost.fuente21">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=fuente2;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{B54B1A07-97C1-4500-ACDC-45B14AAC9F52}localhost.fuente21;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -442,13 +469,13 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.seminario2_2020102231]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{5A466D21-B4E2-4A67-A8F7-4E86DCC77FDF}"
+      DTS:DTSID="{70405A19-76C1-4ADD-BDEE-6874C902897C}"
       DTS:ObjectName="localhost.seminario2_2020102231">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=seminario2_202010223;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Initial File Name=;Server SPN=;Authentication=;Access Token=;Application Name=SSIS-Package-{5A466D21-B4E2-4A67-A8F7-4E86DCC77FDF}localhost.seminario2_2020102231;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=seminario2_202010223;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Initial File Name=;Server SPN=;Authentication=;Access Token=;Application Name=SSIS-Package-{70405A19-76C1-4ADD-BDEE-6874C902897C}localhost.seminario2_2020102231;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -499,6 +526,46 @@
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="ContadorSucursal">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{AD8F6BED-AF49-4C21-AA16-ABBB39631EF4}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ContadorTempCompF1">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{00BB686B-4E12-4D7F-81A7-5E22F3660353}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ContadorTempCompF2">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{46E9895C-8CDF-4CA7-B56C-E54A1D75E9AA}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ContadorTempVentF1">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{77463EE2-C9DE-4200-89AC-FBF6D927107B}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ContadorTempVentF2">
       <DTS:VariableValue
         DTS:DataType="8"
         xml:space="preserve"></DTS:VariableValue>
@@ -669,7 +736,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{5A466D21-B4E2-4A67-A8F7-4E86DCC77FDF}"
+          SQLTask:Connection="{70405A19-76C1-4ADD-BDEE-6874C902897C}"
           SQLTask:SqlStatementSource="SELECT ?= COUNT(*) FROM dbo.Compra&#xA;SELECT ?= COUNT(*) FROM dbo.Venta&#xA;SELECT ?= COUNT(*) FROM dbo.Vendedor&#xA;SELECT ?= COUNT(*) FROM dbo.Producto&#xA;SELECT ?= COUNT(*) FROM dbo.Sucursal&#xA;SELECT ?= COUNT(*) FROM dbo.Proveedor&#xA;SELECT ?= COUNT(*) FROM dbo.Cliente" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -710,6 +777,36 @@
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="6"
             SQLTask:DtsVariableName="User::ContadorCliente"
+            SQLTask:ParameterDirection="Output"
+            SQLTask:DataType="130"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL 5"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{482014B6-F254-4AF4-9D57-DD4A262D57EF}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL 5"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{B54B1A07-97C1-4500-ACDC-45B14AAC9F52}"
+          SQLTask:SqlStatementSource="SELECT ?= COUNT(*) FROM dbo.tempComp&#xA;SELECT ?= COUNT(*) FROM dbo.tempVent" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::ContadorTempCompF2"
+            SQLTask:ParameterDirection="Output"
+            SQLTask:DataType="130"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="User::ContadorTempVentF2"
             SQLTask:ParameterDirection="Output"
             SQLTask:DataType="130"
             SQLTask:ParameterSize="-1" />
@@ -21620,6 +21717,192 @@ FROM     tempvent</property>
                           name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Inputs[Entrada de ordenación].Columns[Derived_WebProveedor]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Derived_WebProveedor"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_WebProveedor]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Inputs[Entrada de ordenación].Columns[Derived_Region]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Derived_Region"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_Region]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Inputs[Entrada de ordenación].Columns[Derived_NumeroProveedor]"
+                      cachedDataType="i4"
+                      cachedName="Derived_NumeroProveedor"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_NumeroProveedor]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Inputs[Entrada de ordenación].Columns[Derived_NombreSucursal]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Derived_NombreSucursal"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_NombreSucursal]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Inputs[Entrada de ordenación].Columns[Derived_NombreProveedor]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Derived_NombreProveedor"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_NombreProveedor]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Inputs[Entrada de ordenación].Columns[Derived_NombreProducto]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Derived_NombreProducto"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_NombreProducto]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Inputs[Entrada de ordenación].Columns[Derived_MarcaProducto]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Derived_MarcaProducto"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_MarcaProducto]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Inputs[Entrada de ordenación].Columns[Derived_DireccionProveedor]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Derived_DireccionProveedor"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_DireccionProveedor]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Inputs[Entrada de ordenación].Columns[Derived_DireccionSucursal]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Derived_DireccionSucursal"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_DireccionSucursal]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Inputs[Entrada de ordenación].Columns[Derived_Departamento]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Derived_Departamento"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_Departamento]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Inputs[Entrada de ordenación].Columns[Derived_Categoria]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Derived_Categoria"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_Categoria]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -21712,6 +21995,159 @@ FROM     tempvent</property>
                           dataType="System.Int32"
                           description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
                           name="SortColumnId">#{Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[id_proveedor]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_WebProveedor]"
+                      dataType="wstr"
+                      length="200"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_WebProveedor]"
+                      name="Derived_WebProveedor">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_WebProveedor]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_Region]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_Region]"
+                      name="Derived_Region">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_Region]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_NumeroProveedor]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_NumeroProveedor]"
+                      name="Derived_NumeroProveedor">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_NumeroProveedor]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_NombreSucursal]"
+                      dataType="wstr"
+                      length="200"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_NombreSucursal]"
+                      name="Derived_NombreSucursal">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_NombreSucursal]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_NombreProveedor]"
+                      dataType="wstr"
+                      length="200"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_NombreProveedor]"
+                      name="Derived_NombreProveedor">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_NombreProveedor]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_NombreProducto]"
+                      dataType="wstr"
+                      length="200"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_NombreProducto]"
+                      name="Derived_NombreProducto">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_NombreProducto]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_MarcaProducto]"
+                      dataType="wstr"
+                      length="200"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_MarcaProducto]"
+                      name="Derived_MarcaProducto">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_MarcaProducto]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_DireccionProveedor]"
+                      dataType="wstr"
+                      length="200"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_DireccionProveedor]"
+                      name="Derived_DireccionProveedor">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_DireccionProveedor]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_DireccionSucursal]"
+                      dataType="wstr"
+                      length="200"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_DireccionSucursal]"
+                      name="Derived_DireccionSucursal">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_DireccionSucursal]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_Departamento]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_Departamento]"
+                      name="Derived_Departamento">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_Departamento]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_Categoria]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación].Columns[Derived_Categoria]"
+                      name="Derived_Categoria">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Derived_Categoria]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -26079,39 +26515,39 @@ FROM     tempcomp</property>
               startId="Package\Tarea Flujo de datos LLENADO COMPRAS\Conversión de datos 2.Outputs[Salida de conversión de datos]" />
             <path
               refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación6]"
-              endId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla]"
-              name="Salida de ordenación"
-              startId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar.Outputs[Salida de ordenación]" />
-            <path
-              refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación5]"
-              endId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla 1.Inputs[Entrada derecha de combinación de mezcla]"
-              name="Salida de ordenación"
-              startId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 1.Outputs[Salida de ordenación]" />
-            <path
-              refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación4]"
               endId="Package\Tarea Flujo de datos LLENADO COMPRAS\Destino de ADO NET COMPRAS.Inputs[Entrada de destino de ADO NET]"
               name="Salida de ordenación"
               startId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 5.Outputs[Salida de ordenación]" />
             <path
-              refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación2]"
-              endId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla 2.Inputs[Entrada izquierda de combinación de mezcla]"
+              refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación5]"
+              endId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla 2.Inputs[Entrada derecha de combinación de mezcla]"
               name="Salida de ordenación"
-              startId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 4.Outputs[Salida de ordenación]" />
+              startId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 3.Outputs[Salida de ordenación]" />
             <path
-              refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación1]"
-              endId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla 1.Inputs[Entrada izquierda de combinación de mezcla]"
-              name="Salida de ordenación"
-              startId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación]" />
-            <path
-              refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación]"
+              refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación4]"
               endId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Inputs[Entrada derecha de combinación de mezcla]"
               name="Salida de ordenación"
               startId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 8.Outputs[Salida de ordenación]" />
             <path
-              refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación3]"
-              endId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla 2.Inputs[Entrada derecha de combinación de mezcla]"
+              refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación2]"
+              endId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla 1.Inputs[Entrada derecha de combinación de mezcla]"
               name="Salida de ordenación"
-              startId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 3.Outputs[Salida de ordenación]" />
+              startId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 1.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación1]"
+              endId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla]"
+              name="Salida de ordenación"
+              startId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación]"
+              endId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla 2.Inputs[Entrada izquierda de combinación de mezcla]"
+              name="Salida de ordenación"
+              startId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 4.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación3]"
+              endId="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla 1.Inputs[Entrada izquierda de combinación de mezcla]"
+              name="Salida de ordenación"
+              startId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2.Outputs[Salida de ordenación]" />
             <path
               refId="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de origen de ADO NET]"
               endId="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 1.Inputs[Entrada de ordenación]"
@@ -38777,49 +39213,49 @@ FROM     tempvent</property>
               startId="Package\Tarea Flujo de datos LLENADO VENTAS\Conversión de datos 5.Outputs[Salida de conversión de datos]" />
             <path
               refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación8]"
-              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 1.Inputs[Entrada derecha de combinación de mezcla]"
-              name="Salida de ordenación"
-              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 3.Outputs[Salida de ordenación]" />
-            <path
-              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación7]"
-              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla.Inputs[Entrada derecha de combinación de mezcla]"
-              name="Salida de ordenación"
-              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar.Outputs[Salida de ordenación]" />
-            <path
-              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación6]"
-              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla]"
-              name="Salida de ordenación"
-              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 1.Outputs[Salida de ordenación]" />
-            <path
-              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación5]"
               endId="Package\Tarea Flujo de datos LLENADO VENTAS\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
               name="Salida de ordenación"
               startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 8.Outputs[Salida de ordenación]" />
             <path
-              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación3]"
-              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 2.Inputs[Entrada izquierda de combinación de mezcla]"
+              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación7]"
+              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 2.Inputs[Entrada derecha de combinación de mezcla]"
               name="Salida de ordenación"
-              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 4.Outputs[Salida de ordenación]" />
+              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 5.Outputs[Salida de ordenación]" />
             <path
-              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación2]"
-              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 3.Inputs[Entrada derecha de combinación de mezcla]"
-              name="Salida de ordenación"
-              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 7.Outputs[Salida de ordenación]" />
-            <path
-              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación1]"
-              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 3.Inputs[Entrada izquierda de combinación de mezcla]"
-              name="Salida de ordenación"
-              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 6.Outputs[Salida de ordenación]" />
-            <path
-              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación]"
+              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación6]"
               endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 1.Inputs[Entrada izquierda de combinación de mezcla]"
               name="Salida de ordenación"
               startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 2.Outputs[Salida de ordenación]" />
             <path
-              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación4]"
-              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 2.Inputs[Entrada derecha de combinación de mezcla]"
+              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación5]"
+              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 3.Inputs[Entrada izquierda de combinación de mezcla]"
               name="Salida de ordenación"
-              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 5.Outputs[Salida de ordenación]" />
+              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 6.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación3]"
+              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla]"
+              name="Salida de ordenación"
+              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 1.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación2]"
+              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla.Inputs[Entrada derecha de combinación de mezcla]"
+              name="Salida de ordenación"
+              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación1]"
+              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 1.Inputs[Entrada derecha de combinación de mezcla]"
+              name="Salida de ordenación"
+              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 3.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación]"
+              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 2.Inputs[Entrada izquierda de combinación de mezcla]"
+              name="Salida de ordenación"
+              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 4.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación4]"
+              endId="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 3.Inputs[Entrada derecha de combinación de mezcla]"
+              name="Salida de ordenación"
+              startId="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 7.Outputs[Salida de ordenación]" />
             <path
               refId="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de origen de ADO NET]"
               endId="Package\Tarea Flujo de datos LLENADO VENTAS\Conversión de datos 4.Inputs[Entrada de conversión de datos]"
@@ -38882,14 +39318,35 @@ FROM     tempvent</property>
           Language="CSharp"
           ReadOnlyVariables="User::Delimitador,User::Extension1,User::Extension2,User::FolderError,User::FolderOrigen,User::TablaDestino1,User::TablaDestino2">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_bd7475c296964c6c87e216bab3554415")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_bd7475c296964c6c87e216bab3554415")]
+[assembly: AssemblyCopyright("Copyright @  2024")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -39010,34 +39467,151 @@ FROM     tempvent</property>
   </resheader>
 </root>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_bd7475c296964c6c87e216bab3554415.Properties.Settings.get_Default():ST_bd7475c296964c6c87e216bab3554415.Properties.Sett" +
-    "ings")]
-
-namespace ST_bd7475c296964c6c87e216bab3554415.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+            Name="packages.config"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<packages>
+  <package id="BouncyCastle.Cryptography" version="2.2.1" targetFramework="net47" />
+</packages>]]></ProjectItem>
+          <ProjectItem
+            Name="ST_bd7475c296964c6c87e216bab3554415.csproj"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69786206-EA1B-496E-9B91-144B68D5435D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ST_bd7475c296964c6c87e216bab3554415</RootNamespace>
+    <AssemblyName>ST_bd7475c296964c6c87e216bab3554415</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.25.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\Google.Protobuf.3.25.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\K4os.Compression.LZ4.1.3.5\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\K4os.Compression.LZ4.Streams.1.3.5\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\MySql.Data.8.3.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Configuration.ConfigurationManager.4.4.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Diagnostics.DiagnosticSource.7.0.2\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="ZstdSharp, Version=0.7.1.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\ZstdSharp.Port.0.7.1\lib\net461\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
+        <Host Name="ScriptTask" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST160</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -39369,181 +39943,43 @@ namespace ST_bd7475c296964c6c87e216bab3554415
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="packages.config"
-            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<packages>
-  <package id="BouncyCastle.Cryptography" version="2.2.1" targetFramework="net47" />
-</packages>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_bd7475c296964c6c87e216bab3554415")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_bd7475c296964c6c87e216bab3554415")]
-[assembly: AssemblyCopyright("Copyright @  2024")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_bd7475c296964c6c87e216bab3554415.Properties.Settings.get_Default():ST_bd7475c296964c6c87e216bab3554415.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_bd7475c296964c6c87e216bab3554415.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
-            Name="ST_bd7475c296964c6c87e216bab3554415.csproj"
-            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{69786206-EA1B-496E-9B91-144B68D5435D}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ST_bd7475c296964c6c87e216bab3554415</RootNamespace>
-    <AssemblyName>ST_bd7475c296964c6c87e216bab3554415</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>.\bin\Debug\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <DebugSymbols>false</DebugSymbols>
-    <Optimize>true</Optimize>
-    <OutputPath>.\bin\Release\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.Protobuf, Version=3.25.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\Google.Protobuf.3.25.1\lib\net45\Google.Protobuf.dll</HintPath>
-    </Reference>
-    <Reference Include="K4os.Compression.LZ4, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\K4os.Compression.LZ4.1.3.5\lib\net462\K4os.Compression.LZ4.dll</HintPath>
-    </Reference>
-    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\K4os.Compression.LZ4.Streams.1.3.5\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
-    </Reference>
-    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\MySql.Data.8.3.0\lib\net462\MySql.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Configuration.ConfigurationManager.4.4.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data" />
-    <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Diagnostics.DiagnosticSource.7.0.2\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Management" />
-    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Transactions" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="ZstdSharp, Version=0.7.1.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
-      <HintPath>C:\Users\luisb\AppData\Local\Temp\Vsta\SSIS_ST160\VstaKEfI6yxzTkuVdoKTUEq5xQ\packages\ZstdSharp.Port.0.7.1\lib\net461\ZstdSharp.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <AppDesigner Include="Properties\" />
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="app.config" />
-    <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="ScriptMain.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <!-- Include the build rules for a C# project.-->
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ProjectExtensions>
-    <VisualStudio>
-      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
-        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
-        <Host Name="ScriptTask" />
-        <ProjectClient>
-          <HostIdentifier>SSIS_ST160</HostIdentifier>
-        </ProjectClient>
-      </FlavorProperties>
-    </VisualStudio>
-  </ProjectExtensions>
-</Project>]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -39907,6 +40343,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 7"
       DTS:To="Package\Tarea Ejecutar SQL 4" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{B0996B96-1C48-41F7-85A3-B59560A20DCE}"
+      DTS:From="Package\Tarea Ejecutar SQL 4"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 8"
+      DTS:To="Package\Tarea Ejecutar SQL 5" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -39937,6 +40381,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Id="Package\Tarea Ejecutar SQL 3"
           TopLeft="238.571432634276,222.529414885597" />
         <NodeLayout
+          Size="178.4,41.6"
+          Id="Package\Tarea Ejecutar SQL 4"
+          TopLeft="245.714289898775,646.776475821895" />
+        <NodeLayout
+          Size="178.4,41.6"
+          Id="Package\Tarea Ejecutar SQL 5"
+          TopLeft="244.785718360726,722.347061483258" />
+        <NodeLayout
           Size="175.2,41.6"
           Id="Package\Tarea Flujo de datos"
           TopLeft="245.000004172325,375.14117697465" />
@@ -39944,6 +40396,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Size="273.6,41.6"
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS"
           TopLeft="194.28571759438,465.270588578485" />
+        <NodeLayout
+          Size="264.8,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS"
+          TopLeft="197.14286050018,554.635294289243" />
         <NodeLayout
           Size="273.6,41.6"
           Id="Package\Tarea Script llenado de tablas temporales"
@@ -40080,10 +40536,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="264.8,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS"
-          TopLeft="197.14286050018,554.635294289243" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 6]"
           TopLeft="330.31428904728,506.870588578485">
@@ -40106,10 +40558,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="178.4,41.6"
-          Id="Package\Tarea Ejecutar SQL 4"
-          TopLeft="245.714289898775,646.776475821895" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 7]"
           TopLeft="332.228575199477,596.235294289243">
@@ -40124,6 +40572,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,43.041181532652" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 8]"
+          TopLeft="334.45000412975,688.376475821895">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.9705856613627"
+              Start="0,0"
+              End="0,26.4705856613627">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.4705856613627" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -40295,9 +40765,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40319,9 +40787,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40343,9 +40809,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40379,9 +40843,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40403,9 +40865,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40427,9 +40887,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40451,9 +40909,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40475,9 +40931,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40499,9 +40953,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40535,9 +40987,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40559,9 +41009,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40595,9 +41043,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40631,9 +41077,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40667,9 +41111,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40691,9 +41133,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40715,9 +41155,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40751,9 +41189,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40787,9 +41223,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40823,9 +41257,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40859,9 +41291,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40895,9 +41325,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40931,9 +41359,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40967,9 +41393,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -40991,9 +41415,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -41027,9 +41449,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -41063,9 +41483,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -41099,9 +41517,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -41135,9 +41551,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -41171,9 +41585,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -41195,9 +41607,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -41219,9 +41629,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -41276,7 +41684,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Text=""
           ParentId="Package\Tarea Flujo de datos"
           FontInfo="{assembly:Null}"
-          Size="28.8,NaN"
+          Size="28.8,40"
           Id="75d0ae13-86f9-4d63-a8aa-3b29e26b0132"
           TopLeft="1012.69899072427,270" />
       </GraphLayout>
@@ -41360,45 +41768,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\División condicional"
-          TopLeft="352.908519594106,470.423535299631" />
-        <NodeLayout
-          Size="198.4,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla 2"
-          TopLeft="650,1287.63636363636" />
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2"
-          TopLeft="361.818181818182,1030.72727272727" />
-        <NodeLayout
-          Size="183.2,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Conversión de datos 1"
-          TopLeft="361.873600764897,159.967322060806" />
-        <NodeLayout
-          Size="198.4,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla 1"
-          TopLeft="515,1117" />
-        <NodeLayout
-          Size="226.4,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Destino de ADO NET COMPRAS"
-          TopLeft="635.454545454545,1465.63636363636" />
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 3"
-          TopLeft="822.727272727273,1197.45454545455" />
-        <NodeLayout
           Size="125.6,41.6"
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 4"
-          TopLeft="556.363636363636,1198.72727272727" />
-        <NodeLayout
-          Size="144.8,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Unión de todo"
-          TopLeft="364.337091217307,290.376472357813" />
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 5"
-          TopLeft="693.636363636364,1373.63636363636" />
+          TopLeft="484.935064935065,928.727272727269" />
         <NodeLayout
           Size="204,41.6"
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Origen SQL SERVER COMP"
@@ -41408,29 +41780,69 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Conversión de datos 2"
           TopLeft="659.000590723947,154.084964222012" />
         <NodeLayout
-          Size="116.8,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar"
-          TopLeft="377.908520019856,557.211769017216" />
+          Size="170.4,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\División condicional"
+          TopLeft="352.908519594106,470.423535299631" />
         <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 8"
-          TopLeft="234.488102217316,846.07353242809" />
+          Size="214.4,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Origen de ADO NET Sucursal"
+          TopLeft="726.753246753247,838.545454545449" />
         <NodeLayout
           Size="216.8,41.6"
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Origen de ADO NET Producto"
-          TopLeft="668.181818181818,932.727272727273" />
+          TopLeft="596.753246753247,662.727272727273" />
         <NodeLayout
-          Size="174.4,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Conversión de datos"
-          TopLeft="92.7942288438326,162" />
+          Size="125.6,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 1"
+          TopLeft="649.48051948052,758.18181818182" />
+        <NodeLayout
+          Size="198.4,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla 1"
+          TopLeft="443.571428571428,846.999999999999" />
         <NodeLayout
           Size="177.6,41.6"
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Origen MYSQL COMP"
           TopLeft="88.3656603711645,55.8705885784849" />
         <NodeLayout
-          Size="222.4,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Origen de ADO NET Proveedor"
-          TopLeft="175.559529785194,761.955884189548" />
+          Size="144.8,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Unión de todo"
+          TopLeft="364.337091217307,290.376472357813" />
+        <NodeLayout
+          Size="125.6,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 2"
+          TopLeft="290.38961038961,760.72727272727" />
+        <NodeLayout
+          Size="226.4,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Destino de ADO NET COMPRAS"
+          TopLeft="564.025974025974,1195.63636363636" />
+        <NodeLayout
+          Size="198.4,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla 2"
+          TopLeft="578.571428571429,1017.63636363636" />
+        <NodeLayout
+          Size="125.6,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 8"
+          TopLeft="163.059530788744,576.07353242809" />
+        <NodeLayout
+          Size="116.8,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar"
+          TopLeft="377.908520019856,557.211769017216" />
+        <NodeLayout
+          Size="188.8,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla"
+          TopLeft="248.028576841647,671.058825395512" />
+        <NodeLayout
+          Size="125.6,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 5"
+          TopLeft="622.207792207793,1103.63636363636" />
+        <NodeLayout
+          Size="183.2,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Conversión de datos 1"
+          TopLeft="361.873600764897,159.967322060806" />
+        <NodeLayout
+          Size="174.4,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Conversión de datos"
+          TopLeft="92.7942288438326,162" />
         <NodeLayout
           Size="222.4,41.6"
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Origen de archivo plano COMP"
@@ -41440,13 +41852,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Columna derivada"
           TopLeft="356.984712065227,384.803926895234" />
         <NodeLayout
-          Size="214.4,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Origen de ADO NET Sucursal"
-          TopLeft="798.181818181818,1108.54545454545" />
-        <NodeLayout
           Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 1"
-          TopLeft="720.909090909091,1028.18181818182" />
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Ordenar 3"
+          TopLeft="751.298701298702,927.454545454549" />
+        <NodeLayout
+          Size="222.4,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Origen de ADO NET Proveedor"
+          TopLeft="104.130958356623,491.955884189548" />
         <EdgeLayout
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de Unión de todo 1]"
           TopLeft="437.660901641266,331.976472357813">
@@ -41504,6 +41916,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de origen de ADO NET4]"
+          TopLeft="215.330958356626,533.555884189548">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="10.5285724321191,42.5176482385417"
+              Start="0,0"
+              End="10.5285724321191,35.0176482385417">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.2588241192709" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.2588241192709"
+                    Point2="0,21.2588241192709"
+                    Point3="4,21.2588241192709" />
+                  <mssgle:LineSegment
+                    End="6.52857243211912,21.2588241192709" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6.52857243211912,21.2588241192709"
+                    Point2="10.5285724321191,21.2588241192709"
+                    Point3="10.5285724321191,25.2588241192709" />
+                  <mssgle:LineSegment
+                    End="10.5285724321191,35.0176482385417" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de origen de ADO NET3]"
           TopLeft="452.872013750516,93.7176430728058">
           <EdgeLayout.Curve>
@@ -41549,30 +41995,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de origen de ADO NET1]"
-          TopLeft="905.381818181818,1150.14545454545">
+          TopLeft="833.953246753247,880.145454545449">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-19.8545454545456,47.3090909090911"
+              EndConnector="-19.8545454545456,47.3090909090912"
               Start="0,0"
-              End="-19.8545454545456,39.8090909090911">
+              End="-19.8545454545456,39.8090909090912">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.6545454545455" />
+                    End="0,19.6545454545454" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.6545454545455"
-                    Point2="0,23.6545454545455"
-                    Point3="-4,23.6545454545455" />
+                    Point1="0,19.6545454545454"
+                    Point2="0,23.6545454545454"
+                    Point3="-4,23.6545454545454" />
                   <mssgle:LineSegment
-                    End="-15.8545454545456,23.6545454545455" />
+                    End="-15.8545454545456,23.6545454545454" />
                   <mssgle:CubicBezierSegment
-                    Point1="-15.8545454545456,23.6545454545455"
-                    Point2="-19.8545454545456,23.6545454545455"
-                    Point3="-19.8545454545456,27.6545454545455" />
+                    Point1="-15.8545454545456,23.6545454545454"
+                    Point2="-19.8545454545456,23.6545454545454"
+                    Point3="-19.8545454545456,27.6545454545454" />
                   <mssgle:LineSegment
-                    End="-19.8545454545456,39.8090909090911" />
+                    End="-19.8545454545456,39.8090909090912" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -41583,7 +42029,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de origen de ADO NET]"
-          TopLeft="780.145454545455,974.327272727273">
+          TopLeft="708.716883116884,704.327272727273">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -41604,31 +42050,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de origen de ADO NET4]"
-          TopLeft="286.759529785197,803.555884189548">
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación]"
+          TopLeft="547.735064935065,970.32727272727">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="10.5285724321191,42.5176482385417"
+              EndConnector="130.036363636364,47.3090909090907"
               Start="0,0"
-              End="10.5285724321191,35.0176482385417">
+              End="130.036363636364,39.8090909090907">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.2588241192709" />
+                    End="0,19.6545454545453" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.2588241192709"
-                    Point2="0,21.2588241192709"
-                    Point3="4,21.2588241192709" />
+                    Point1="0,19.6545454545453"
+                    Point2="0,23.6545454545453"
+                    Point3="4,23.6545454545453" />
                   <mssgle:LineSegment
-                    End="6.52857243211906,21.2588241192709" />
+                    End="126.036363636364,23.6545454545453" />
                   <mssgle:CubicBezierSegment
-                    Point1="6.52857243211906,21.2588241192709"
-                    Point2="10.5285724321191,21.2588241192709"
-                    Point3="10.5285724321191,25.2588241192709" />
+                    Point1="126.036363636364,23.6545454545453"
+                    Point2="130.036363636364,23.6545454545453"
+                    Point3="130.036363636364,27.6545454545453" />
                   <mssgle:LineSegment
-                    End="10.5285724321191,35.0176482385417" />
+                    End="130.036363636364,39.8090909090907" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -41639,7 +42085,97 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación1]"
-          TopLeft="424.618181818182,1072.32727272727">
+          TopLeft="436.308520019856,598.811769017216">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-63.746609844876,72.2470563782961"
+              Start="0,0"
+              End="-63.746609844876,64.7470563782961">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.983962954482" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.983962954482"
+                    Point2="0,42.983962954482"
+                    Point3="-4,42.983962954482" />
+                  <mssgle:LineSegment
+                    End="-59.746609844876,42.983962954482" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-59.746609844876,42.983962954482"
+                    Point2="-63.746609844876,42.983962954482"
+                    Point3="-63.746609844876,46.983962954482" />
+                  <mssgle:LineSegment
+                    End="-63.746609844876,64.7470563782961" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación2]"
+          TopLeft="712.28051948052,799.78181818182">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-169.509090909091,47.2181818181816"
+              Start="0,0"
+              End="-169.509090909091,39.7181818181816">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.6090909090908" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.6090909090908"
+                    Point2="0,23.6090909090908"
+                    Point3="-4,23.6090909090908" />
+                  <mssgle:LineSegment
+                    End="-165.509090909091,23.6090909090908" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-165.509090909091,23.6090909090908"
+                    Point2="-169.509090909091,23.6090909090908"
+                    Point3="-169.509090909091,27.6090909090908" />
+                  <mssgle:LineSegment
+                    End="-169.509090909091,39.7181818181816" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación6]"
+          TopLeft="681.116883116884,1145.23636363636">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50.4000000000001"
+              Start="0,0"
+              End="0,42.9000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.9000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación3]"
+          TopLeft="353.18961038961,802.32727272727">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -41672,87 +42208,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación2]"
-          TopLeft="619.163636363636,1240.32727272727">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="130.036363636364,47.3090909090909"
-              Start="0,0"
-              End="130.036363636364,39.8090909090909">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.6545454545454" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.6545454545454"
-                    Point2="0,23.6545454545454"
-                    Point3="4,23.6545454545454" />
-                  <mssgle:LineSegment
-                    End="126.036363636364,23.6545454545454" />
-                  <mssgle:CubicBezierSegment
-                    Point1="126.036363636364,23.6545454545454"
-                    Point2="130.036363636364,23.6545454545454"
-                    Point3="130.036363636364,27.6545454545454" />
-                  <mssgle:LineSegment
-                    End="130.036363636364,39.8090909090909" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación3]"
-          TopLeft="885.527272727273,1239.05454545455">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-104.593939393939,48.5818181818181"
-              Start="0,0"
-              End="-104.593939393939,41.0818181818181">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.9158981818181" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.9158981818181"
-                    Point2="0,28.9158981818181"
-                    Point3="-4,28.9158981818181" />
-                  <mssgle:LineSegment
-                    End="-100.593939393939,28.9158981818181" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-100.593939393939,28.9158981818181"
-                    Point2="-104.593939393939,28.9158981818181"
-                    Point3="-104.593939393939,32.9158981818181" />
-                  <mssgle:LineSegment
-                    End="-104.593939393939,41.0818181818181" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación4]"
-          TopLeft="752.545454545455,1415.23636363636">
+          TopLeft="225.859530788745,617.67353242809">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,50.4000000000001"
+              EndConnector="86.4357127195685,53.3852929674217"
               Start="0,0"
-              End="0,42.9000000000001">
+              End="86.4357127195685,45.8852929674217">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.9000000000001" />
+                    End="0,27.7620062360795" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.7620062360795"
+                    Point2="0,31.7620062360795"
+                    Point3="4,31.7620062360795" />
+                  <mssgle:LineSegment
+                    End="82.4357127195685,31.7620062360795" />
+                  <mssgle:CubicBezierSegment
+                    Point1="82.4357127195685,31.7620062360795"
+                    Point2="86.4357127195685,31.7620062360795"
+                    Point3="86.4357127195685,35.7620062360795" />
+                  <mssgle:LineSegment
+                    End="86.4357127195685,45.8852929674217" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -41763,30 +42243,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación5]"
-          TopLeft="783.709090909091,1069.78181818182">
+          TopLeft="814.098701298702,969.054545454549">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-169.509090909091,47.2181818181816"
+              EndConnector="-104.593939393939,48.5818181818181"
               Start="0,0"
-              End="-169.509090909091,39.7181818181816">
+              End="-104.593939393939,41.0818181818181">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.6090909090908" />
+                    End="0,24.9158981818182" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.6090909090908"
-                    Point2="0,23.6090909090908"
-                    Point3="-4,23.6090909090908" />
+                    Point1="0,24.9158981818182"
+                    Point2="0,28.9158981818182"
+                    Point3="-4,28.9158981818182" />
                   <mssgle:LineSegment
-                    End="-165.509090909091,23.6090909090908" />
+                    End="-100.593939393939,28.9158981818182" />
                   <mssgle:CubicBezierSegment
-                    Point1="-165.509090909091,23.6090909090908"
-                    Point2="-169.509090909091,23.6090909090908"
-                    Point3="-169.509090909091,27.6090909090908" />
+                    Point1="-100.593939393939,28.9158981818182"
+                    Point2="-104.593939393939,28.9158981818182"
+                    Point3="-104.593939393939,32.9158981818182" />
                   <mssgle:LineSegment
-                    End="-169.509090909091,39.7181818181816" />
+                    End="-104.593939393939,41.0818181818181" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -41898,30 +42378,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de combinación de mezcla]"
-          TopLeft="616.681818181818,1158.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40.1272727272728"
-              Start="0,0"
-              End="0,32.6272727272728">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.6272727272728" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de combinación de mezcla2]"
-          TopLeft="752.818181818182,1329.23636363636">
+          TopLeft="681.389610389611,1059.23636363636">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -41933,6 +42391,62 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,36.9000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de combinación de mezcla1]"
+          TopLeft="342.428576841646,712.658825395512">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="10.7610335479641,48.0684473317582"
+              Start="0,0"
+              End="10.7610335479641,40.5684473317582">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.0342236658792" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.0342236658792"
+                    Point2="0,24.0342236658792"
+                    Point3="4,24.0342236658792" />
+                  <mssgle:LineSegment
+                    End="6.76103354796408,24.0342236658792" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6.76103354796408,24.0342236658792"
+                    Point2="10.7610335479641,24.0342236658792"
+                    Point3="10.7610335479641,28.0342236658792" />
+                  <mssgle:LineSegment
+                    End="10.7610335479641,40.5684473317582" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de combinación de mezcla]"
+          TopLeft="545.253246753247,888.599999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.1272727272726"
+              Start="0,0"
+              End="0,32.6272727272726">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.6272727272726" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -41987,105 +42501,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="188.8,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS\Combinación de mezcla"
-          TopLeft="319.457148270218,941.058825395512" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación]"
-          TopLeft="297.288102217316,887.67353242809">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="86.4357127195685,53.3852929674217"
-              Start="0,0"
-              End="86.4357127195685,45.8852929674217">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.7620062360795" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27.7620062360795"
-                    Point2="0,31.7620062360795"
-                    Point3="4,31.7620062360795" />
-                  <mssgle:LineSegment
-                    End="82.4357127195685,31.7620062360795" />
-                  <mssgle:CubicBezierSegment
-                    Point1="82.4357127195685,31.7620062360795"
-                    Point2="86.4357127195685,31.7620062360795"
-                    Point3="86.4357127195685,35.7620062360795" />
-                  <mssgle:LineSegment
-                    End="86.4357127195685,45.8852929674217" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de ordenación6]"
-          TopLeft="440.149500811704,598.811769017216">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,342.247056378296"
-              Start="0,0"
-              End="0,334.747056378296">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,334.747056378296" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO COMPRAS.Paths[Salida de combinación de mezcla1]"
-          TopLeft="413.857148270218,982.658825395512">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="10.7610335479641,48.0684473317583"
-              Start="0,0"
-              End="10.7610335479641,40.5684473317583">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.0342236658792" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.0342236658792"
-                    Point2="0,24.0342236658792"
-                    Point3="4,24.0342236658792" />
-                  <mssgle:LineSegment
-                    End="6.76103354796413,24.0342236658792" />
-                  <mssgle:CubicBezierSegment
-                    Point1="6.76103354796413,24.0342236658792"
-                    Point2="10.7610335479641,24.0342236658792"
-                    Point3="10.7610335479641,28.0342236658792" />
-                  <mssgle:LineSegment
-                    End="10.7610335479641,40.5684473317583" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos LLENADO COMPRAS\Destino de ADO NET COMPRAS">
+    design-time-name="Package\Tarea Flujo de datos LLENADO COMPRAS\Origen de ADO NET Sucursal">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -42101,7 +42521,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos LLENADO COMPRAS\Origen de ADO NET Sucursal">
+    design-time-name="Package\Tarea Flujo de datos LLENADO COMPRAS\Destino de ADO NET COMPRAS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos LLENADO COMPRAS\Origen de ADO NET Proveedor">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -42114,29 +42542,89 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="220,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de archivo plano VENT"
-          TopLeft="593.57654005906,54.6218495055466" />
-        <NodeLayout
-          Size="172,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Columna derivada 1"
-          TopLeft="353.698985615294,353.798323295874" />
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 1"
-          TopLeft="381.454086474444,559.51260901016" />
-        <NodeLayout
-          Size="175.2,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen MYSQL VENT"
-          TopLeft="95.8622463163933,54.6218495055466" />
+          Size="188.8,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla"
+          TopLeft="483.076923076923,658" />
         <NodeLayout
           Size="157.6,41.6"
           Id="Package\Tarea Flujo de datos LLENADO VENTAS\Unión de todo 1"
           TopLeft="360.707148972701,253.68235559018" />
         <NodeLayout
+          Size="125.6,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 1"
+          TopLeft="381.454086474444,559.51260901016" />
+        <NodeLayout
+          Size="125.6,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 2"
+          TopLeft="509.230769230769,744.923076923077" />
+        <NodeLayout
+          Size="198.4,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 1"
+          TopLeft="611.384615384615,833.384615384615" />
+        <NodeLayout
+          Size="125.6,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 5"
+          TopLeft="934,917.538461538462" />
+        <NodeLayout
+          Size="214.4,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de ADO NET Sucursal"
+          TopLeft="1071.84615384615,1012.15384615385" />
+        <NodeLayout
+          Size="125.6,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 8"
+          TopLeft="975.333333333333,1274.66666666667" />
+        <NodeLayout
+          Size="125.6,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 4"
+          TopLeft="647.538461538461,916.153846153846" />
+        <NodeLayout
+          Size="198.4,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 2"
+          TopLeft="767.076923076923,1012" />
+        <NodeLayout
+          Size="116.8,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar"
+          TopLeft="662.307692307692,556.923076923077" />
+        <NodeLayout
+          Size="220,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de ADO NET Vendedor"
+          TopLeft="760,655.384615384615" />
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen MYSQL VENT"
+          TopLeft="95.8622463163933,54.6218495055466" />
+        <NodeLayout
+          Size="216.8,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de ADO NET Producto"
+          TopLeft="890.153846153846,833.076923076923" />
+        <NodeLayout
+          Size="198.4,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 3"
+          TopLeft="932.307692307692,1192" />
+        <NodeLayout
           Size="179.2,41.6"
           Id="Package\Tarea Flujo de datos LLENADO VENTAS\División condicional 1"
           TopLeft="351.535716885815,453.042020483767" />
+        <NodeLayout
+          Size="220,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de archivo plano VENT"
+          TopLeft="593.57654005906,54.6218495055466" />
+        <NodeLayout
+          Size="125.6,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 3"
+          TopLeft="810.615384615385,745.692307692308" />
+        <NodeLayout
+          Size="125.6,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 7"
+          TopLeft="1120.30769230769,1105.23076923077" />
+        <NodeLayout
+          Size="216,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de ADO NET CLIENTE"
+          TopLeft="613.846153846154,453.384615384615" />
+        <NodeLayout
+          Size="201.6,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen SQL SERVER VENT"
+          TopLeft="336.352046544367,55.7142864956575" />
         <NodeLayout
           Size="183.2,41.6"
           Id="Package\Tarea Flujo de datos LLENADO VENTAS\Conversión de datos 3"
@@ -42146,13 +42634,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Id="Package\Tarea Flujo de datos LLENADO VENTAS\Conversión de datos 4"
           TopLeft="341.680844821057,141.288517387681" />
         <NodeLayout
+          Size="125.6,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 6"
+          TopLeft="804.769230769231,1102.15384615385" />
+        <NodeLayout
           Size="183.2,41.6"
           Id="Package\Tarea Flujo de datos LLENADO VENTAS\Conversión de datos 5"
           TopLeft="613.789692992459,139.141172598968" />
         <NodeLayout
-          Size="201.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen SQL SERVER VENT"
-          TopLeft="336.352046544367,55.7142864956575" />
+          Size="176,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Destino de ADO NET"
+          TopLeft="952.666666666667,1366.66666666667" />
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Columna derivada 1"
+          TopLeft="353.698985615294,353.798323295874" />
         <EdgeLayout
           Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de Unión de todo 1]"
           TopLeft="439.603067293998,295.28235559018">
@@ -42220,6 +42716,94 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de origen de ADO NET4]"
+          TopLeft="1181.07692307692,1053.75384615385">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51.4769230769232"
+              Start="0,0"
+              End="0,43.9769230769232">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.9769230769232" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de origen de ADO NET3]"
+          TopLeft="721.276923076923,494.984615384615">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61.9384615384618"
+              Start="0,0"
+              End="0,54.4384615384618">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.4384615384618" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de origen de ADO NET2]"
+          TopLeft="997.676923076923,874.676923076923">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.8615384615385"
+              Start="0,0"
+              End="0,35.3615384615385">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.3615384615385" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de origen de ADO NET1]"
+          TopLeft="871.707692307693,696.984615384615">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48.7076923076922"
+              Start="0,0"
+              End="0,41.2076923076922">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.2076923076922" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de origen de ADO NET]"
           TopLeft="435.216445682712,97.3142864956575">
           <EdgeLayout.Curve>
@@ -42242,19 +42826,291 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de conversión de datos1]"
-          TopLeft="436.393996896879,182.888517387681">
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación]"
+          TopLeft="710.338461538461,957.753846153846">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,70.7938382024991"
+              EndConnector="124.205128205129,54.2461538461537"
               Start="0,0"
-              End="0,63.2938382024991">
+              End="124.205128205129,46.7461538461537">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,63.2938382024991" />
+                    End="0,28.2873107692307" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.2873107692307"
+                    Point2="0,32.2873107692307"
+                    Point3="4,32.2873107692307" />
+                  <mssgle:LineSegment
+                    End="120.205128205129,32.2873107692307" />
+                  <mssgle:CubicBezierSegment
+                    Point1="120.205128205129,32.2873107692307"
+                    Point2="124.205128205129,32.2873107692307"
+                    Point3="124.205128205129,36.2873107692307" />
+                  <mssgle:LineSegment
+                    End="124.205128205129,46.7461538461537" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación1]"
+          TopLeft="873.415384615385,787.292307692308">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-131.097435897436,46.0923076923076"
+              Start="0,0"
+              End="-131.097435897436,38.5923076923076">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.4341415384615" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.4341415384615"
+                    Point2="0,27.4341415384615"
+                    Point3="-4,27.4341415384615" />
+                  <mssgle:LineSegment
+                    End="-127.097435897436,27.4341415384615" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-127.097435897436,27.4341415384615"
+                    Point2="-131.097435897436,27.4341415384615"
+                    Point3="-131.097435897436,31.4341415384615" />
+                  <mssgle:LineSegment
+                    End="-131.097435897436,38.5923076923076" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación2]"
+          TopLeft="720.707692307692,598.523076923077">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-143.230769230769,59.4769230769227"
+              Start="0,0"
+              End="-143.230769230769,51.9769230769227">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.7384615384614" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.7384615384614"
+                    Point2="0,29.7384615384614"
+                    Point3="-4,29.7384615384614" />
+                  <mssgle:LineSegment
+                    End="-139.230769230769,29.7384615384614" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-139.230769230769,29.7384615384614"
+                    Point2="-143.230769230769,29.7384615384614"
+                    Point3="-143.230769230769,33.7384615384614" />
+                  <mssgle:LineSegment
+                    End="-143.230769230769,51.9769230769227" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación3]"
+          TopLeft="444.254086474444,601.11260901016">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="103.089503269146,56.8873909898399"
+              Start="0,0"
+              End="103.089503269146,49.3873909898399">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.8456074124426" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.8456074124426"
+                    Point2="0,33.8456074124426"
+                    Point3="4,33.8456074124426" />
+                  <mssgle:LineSegment
+                    End="99.0895032691458,33.8456074124426" />
+                  <mssgle:CubicBezierSegment
+                    Point1="99.0895032691458,33.8456074124426"
+                    Point2="103.089503269146,33.8456074124426"
+                    Point3="103.089503269146,37.8456074124426" />
+                  <mssgle:LineSegment
+                    End="103.089503269146,49.3873909898399" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación8]"
+          TopLeft="1039.4,1316.26666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50.4000000000005"
+              Start="0,0"
+              End="0,42.9000000000005">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.9000000000005" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación4]"
+          TopLeft="1183.10769230769,1146.83076923077">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-151.6,45.1692307692308"
+              Start="0,0"
+              End="-151.6,37.6692307692308">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5846153846154" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5846153846154"
+                    Point2="0,22.5846153846154"
+                    Point3="-4,22.5846153846154" />
+                  <mssgle:LineSegment
+                    End="-147.6,22.5846153846154" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-147.6,22.5846153846154"
+                    Point2="-151.6,22.5846153846154"
+                    Point3="-151.6,26.5846153846154" />
+                  <mssgle:LineSegment
+                    End="-151.6,37.6692307692308" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación5]"
+          TopLeft="867.569230769231,1143.75384615385">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="132.205128205128,48.2461538461541"
+              Start="0,0"
+              End="132.205128205128,40.7461538461541">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.7161107692309" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.7161107692309"
+                    Point2="0,28.7161107692309"
+                    Point3="4,28.7161107692309" />
+                  <mssgle:LineSegment
+                    End="128.205128205128,28.7161107692309" />
+                  <mssgle:CubicBezierSegment
+                    Point1="128.205128205128,28.7161107692309"
+                    Point2="132.205128205128,28.7161107692309"
+                    Point3="132.205128205128,32.7161107692309" />
+                  <mssgle:LineSegment
+                    End="132.205128205128,40.7461538461541" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación6]"
+          TopLeft="572.030769230769,786.523076923077">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="106.820512820513,46.8615384615383"
+              Start="0,0"
+              End="106.820512820513,39.3615384615383">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.8919876923076" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.8919876923076"
+                    Point2="0,27.8919876923076"
+                    Point3="4,27.8919876923076" />
+                  <mssgle:LineSegment
+                    End="102.820512820513,27.8919876923076" />
+                  <mssgle:CubicBezierSegment
+                    Point1="102.820512820513,27.8919876923076"
+                    Point2="106.820512820513,27.8919876923076"
+                    Point3="106.820512820513,31.8919876923076" />
+                  <mssgle:LineSegment
+                    End="106.820512820513,39.3615384615383" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación7]"
+          TopLeft="996.8,959.138461538462">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-130.523076923077,52.8615384615383"
+              Start="0,0"
+              End="-130.523076923077,45.3615384615383">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.4307692307692" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.4307692307692"
+                    Point2="0,26.4307692307692"
+                    Point3="-4,26.4307692307692" />
+                  <mssgle:LineSegment
+                    End="-126.523076923077,26.4307692307692" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-126.523076923077,26.4307692307692"
+                    Point2="-130.523076923077,26.4307692307692"
+                    Point3="-130.523076923077,30.4307692307692" />
+                  <mssgle:LineSegment
+                    End="-130.523076923077,45.3615384615383" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -42298,6 +43154,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de conversión de datos1]"
+          TopLeft="436.393996896879,182.888517387681">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,70.7938382024991"
+              Start="0,0"
+              End="0,63.2938382024991">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.2938382024991" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de conversión de datos]"
           TopLeft="184.754763491178,183.495426826631">
           <EdgeLayout.Curve>
@@ -42323,6 +43201,94 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     Point3="217.352385481523,50.0127286736079" />
                   <mssgle:LineSegment
                     End="217.352385481523,62.6869287635491" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de combinación de mezcla3]"
+          TopLeft="574.753846153846,699.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.3230769230771"
+              Start="0,0"
+              End="0,37.8230769230771">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.8230769230771" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de combinación de mezcla2]"
+          TopLeft="1034.82051282051,1233.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.0666666666666"
+              Start="0,0"
+              End="0,33.5666666666666">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5666666666666" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de combinación de mezcla1]"
+          TopLeft="710.461538461538,874.984615384615">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.1692307692309"
+              Start="0,0"
+              End="0,33.6692307692309">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.6692307692309" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de combinación de mezcla]"
+          TopLeft="866.923076923077,1053.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48.5538461538461"
+              Start="0,0"
+              End="0,41.0538461538461">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.0538461538461" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -42377,549 +43343,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="216,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de ADO NET CLIENTE"
-          TopLeft="613.846153846154,453.384615384615" />
-        <NodeLayout
-          Size="116.8,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar"
-          TopLeft="662.307692307692,556.923076923077" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de origen de ADO NET3]"
-          TopLeft="721.276923076923,494.984615384615">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61.9384615384618"
-              Start="0,0"
-              End="0,54.4384615384618">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,54.4384615384618" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="188.8,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla"
-          TopLeft="483.076923076923,658" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación7]"
-          TopLeft="720.707692307692,598.523076923077">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-143.230769230769,59.4769230769227"
-              Start="0,0"
-              End="-143.230769230769,51.9769230769227">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.7384615384614" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.7384615384614"
-                    Point2="0,29.7384615384614"
-                    Point3="-4,29.7384615384614" />
-                  <mssgle:LineSegment
-                    End="-139.230769230769,29.7384615384614" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-139.230769230769,29.7384615384614"
-                    Point2="-143.230769230769,29.7384615384614"
-                    Point3="-143.230769230769,33.7384615384614" />
-                  <mssgle:LineSegment
-                    End="-143.230769230769,51.9769230769227" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación6]"
-          TopLeft="444.254086474444,601.11260901016">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="103.089503269146,56.8873909898399"
-              Start="0,0"
-              End="103.089503269146,49.3873909898399">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.8456074124426" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.8456074124426"
-                    Point2="0,33.8456074124426"
-                    Point3="4,33.8456074124426" />
-                  <mssgle:LineSegment
-                    End="99.0895032691458,33.8456074124426" />
-                  <mssgle:CubicBezierSegment
-                    Point1="99.0895032691458,33.8456074124426"
-                    Point2="103.089503269146,33.8456074124426"
-                    Point3="103.089503269146,37.8456074124426" />
-                  <mssgle:LineSegment
-                    End="103.089503269146,49.3873909898399" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 2"
-          TopLeft="509.230769230769,744.923076923077" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de combinación de mezcla3]"
-          TopLeft="574.753846153846,699.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45.3230769230771"
-              Start="0,0"
-              End="0,37.8230769230771">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.8230769230771" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="220,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de ADO NET Vendedor"
-          TopLeft="760,655.384615384615" />
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 3"
-          TopLeft="810.615384615385,745.692307692308" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de origen de ADO NET1]"
-          TopLeft="871.707692307693,696.984615384615">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48.7076923076922"
-              Start="0,0"
-              End="0,41.2076923076922">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.2076923076922" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="198.4,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 1"
-          TopLeft="611.384615384615,833.384615384615" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación8]"
-          TopLeft="873.415384615385,787.292307692308">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-131.097435897436,46.0923076923076"
-              Start="0,0"
-              End="-131.097435897436,38.5923076923076">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.4341415384615" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.4341415384615"
-                    Point2="0,27.4341415384615"
-                    Point3="-4,27.4341415384615" />
-                  <mssgle:LineSegment
-                    End="-127.097435897436,27.4341415384615" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-127.097435897436,27.4341415384615"
-                    Point2="-131.097435897436,27.4341415384615"
-                    Point3="-131.097435897436,31.4341415384615" />
-                  <mssgle:LineSegment
-                    End="-131.097435897436,38.5923076923076" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación]"
-          TopLeft="572.030769230769,786.523076923077">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="106.820512820513,46.8615384615383"
-              Start="0,0"
-              End="106.820512820513,39.3615384615383">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.8919876923076" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.8919876923076"
-                    Point2="0,27.8919876923076"
-                    Point3="4,27.8919876923076" />
-                  <mssgle:LineSegment
-                    End="102.820512820513,27.8919876923076" />
-                  <mssgle:CubicBezierSegment
-                    Point1="102.820512820513,27.8919876923076"
-                    Point2="106.820512820513,27.8919876923076"
-                    Point3="106.820512820513,31.8919876923076" />
-                  <mssgle:LineSegment
-                    End="106.820512820513,39.3615384615383" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 4"
-          TopLeft="647.538461538461,916.153846153846" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de combinación de mezcla1]"
-          TopLeft="710.461538461538,874.984615384615">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,41.1692307692309"
-              Start="0,0"
-              End="0,33.6692307692309">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.6692307692309" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="216.8,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de ADO NET Producto"
-          TopLeft="890.153846153846,833.076923076923" />
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 5"
-          TopLeft="934,917.538461538462" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de origen de ADO NET2]"
-          TopLeft="997.676923076923,874.676923076923">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42.8615384615385"
-              Start="0,0"
-              End="0,35.3615384615385">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.3615384615385" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="198.4,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 2"
-          TopLeft="767.076923076923,1012" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación4]"
-          TopLeft="996.8,959.138461538462">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-130.523076923077,52.8615384615383"
-              Start="0,0"
-              End="-130.523076923077,45.3615384615383">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.4307692307692" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.4307692307692"
-                    Point2="0,26.4307692307692"
-                    Point3="-4,26.4307692307692" />
-                  <mssgle:LineSegment
-                    End="-126.523076923077,26.4307692307692" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-126.523076923077,26.4307692307692"
-                    Point2="-130.523076923077,26.4307692307692"
-                    Point3="-130.523076923077,30.4307692307692" />
-                  <mssgle:LineSegment
-                    End="-130.523076923077,45.3615384615383" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación3]"
-          TopLeft="710.338461538461,957.753846153846">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="124.205128205129,54.2461538461537"
-              Start="0,0"
-              End="124.205128205129,46.7461538461537">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.2873107692307" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.2873107692307"
-                    Point2="0,32.2873107692307"
-                    Point3="4,32.2873107692307" />
-                  <mssgle:LineSegment
-                    End="120.205128205129,32.2873107692307" />
-                  <mssgle:CubicBezierSegment
-                    Point1="120.205128205129,32.2873107692307"
-                    Point2="124.205128205129,32.2873107692307"
-                    Point3="124.205128205129,36.2873107692307" />
-                  <mssgle:LineSegment
-                    End="124.205128205129,46.7461538461537" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 6"
-          TopLeft="804.769230769231,1102.15384615385" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de combinación de mezcla]"
-          TopLeft="866.923076923077,1053.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48.5538461538461"
-              Start="0,0"
-              End="0,41.0538461538461">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.0538461538461" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="214.4,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de ADO NET Sucursal"
-          TopLeft="1071.84615384615,1012.15384615385" />
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 7"
-          TopLeft="1120.30769230769,1105.23076923077" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de origen de ADO NET4]"
-          TopLeft="1181.07692307692,1053.75384615385">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,51.4769230769232"
-              Start="0,0"
-              End="0,43.9769230769232">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,43.9769230769232" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="198.4,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Combinación de mezcla 3"
-          TopLeft="932.307692307692,1192" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación2]"
-          TopLeft="1183.10769230769,1146.83076923077">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-151.6,45.1692307692308"
-              Start="0,0"
-              End="-151.6,37.6692307692308">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.5846153846154" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.5846153846154"
-                    Point2="0,22.5846153846154"
-                    Point3="-4,22.5846153846154" />
-                  <mssgle:LineSegment
-                    End="-147.6,22.5846153846154" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-147.6,22.5846153846154"
-                    Point2="-151.6,22.5846153846154"
-                    Point3="-151.6,26.5846153846154" />
-                  <mssgle:LineSegment
-                    End="-151.6,37.6692307692308" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación1]"
-          TopLeft="867.569230769231,1143.75384615385">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="132.205128205128,48.2461538461541"
-              Start="0,0"
-              End="132.205128205128,40.7461538461541">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.7161107692309" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.7161107692309"
-                    Point2="0,28.7161107692309"
-                    Point3="4,28.7161107692309" />
-                  <mssgle:LineSegment
-                    End="128.205128205128,28.7161107692309" />
-                  <mssgle:CubicBezierSegment
-                    Point1="128.205128205128,28.7161107692309"
-                    Point2="132.205128205128,28.7161107692309"
-                    Point3="132.205128205128,32.7161107692309" />
-                  <mssgle:LineSegment
-                    End="132.205128205128,40.7461538461541" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="125.6,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Ordenar 8"
-          TopLeft="975.333333333333,1274.66666666667" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de combinación de mezcla2]"
-          TopLeft="1034.82051282051,1233.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,41.0666666666666"
-              Start="0,0"
-              End="0,33.5666666666666">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.5666666666666" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="176,41.6"
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS\Destino de ADO NET"
-          TopLeft="952.666666666667,1366.66666666667" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos LLENADO VENTAS.Paths[Salida de ordenación5]"
-          TopLeft="1039.4,1316.26666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50.4000000000005"
-              Start="0,0"
-              End="0,42.9000000000005">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42.9000000000005" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de ADO NET CLIENTE">
+    design-time-name="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de ADO NET Sucursal">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -42943,7 +43371,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de ADO NET Sucursal">
+    design-time-name="Package\Tarea Flujo de datos LLENADO VENTAS\Origen de ADO NET CLIENTE">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
